@@ -8,9 +8,9 @@ public class Empresa {
 	private List<Produto> produtos;
 	private List<Servico> servicos;
 	public Empresa() {
-		this.clientes = new ArrayList<>();
-		this.produtos = new ArrayList<>();
-		this.servicos = new ArrayList<>();
+		this.clientes = new ArrayList<Cliente>();
+		this.produtos = new ArrayList<Produto>();
+		this.servicos = new ArrayList<Servico>();
 	}
 	public List<Cliente> getClientes() {
 		return clientes;

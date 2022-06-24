@@ -8,15 +8,17 @@ public class Cliente {
 	public String nome;
 	public String nomeSocial;
 	private CPF cpf;
+	public String genero;
 	private List<RG> rgs;
 	private LocalDate dataCadastro;
 	private List<Telefone> telefones;
 	private List<Produto> produtosConsumidos;
 	private List<Servico> servicosConsumidos;
-	public Cliente(String nome, String nomeSocial, CPF cpf) {
+	public Cliente(String nome, String nomeSocial, CPF cpf,String genero) {
 		this.nome = nome;
 		this.nomeSocial = nomeSocial;
 		this.cpf = cpf;
+		this.genero = genero;
 		this.rgs = new ArrayList<>();
 		this.dataCadastro = LocalDate.now();
 		this.telefones = new ArrayList<>();
@@ -29,6 +31,8 @@ public class Cliente {
 	public List<RG> getRgs() {
 		return rgs;
 	}
+	
+	
 	public LocalDate getDataCadastro() {
 		return dataCadastro;
 	}
@@ -41,4 +45,5 @@ public class Cliente {
 	public List<Servico> getServicosConsumidos() {
 		return servicosConsumidos;
 	}
+		
 }
